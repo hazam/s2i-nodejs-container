@@ -1,6 +1,6 @@
-<aside class="warning">
+:warning:
 This version differs from the original sclorg only for the addition of ImageMagick for Node8 Centos Dockerfile
-</aside>
+:warning:
 
 NodeJS container images
 ====================
