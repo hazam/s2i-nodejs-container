@@ -49,7 +49,7 @@ LABEL summary="$SUMMARY" \
       usage="s2i build <SOURCE-REPOSITORY> centos/$NAME-$NODEJS_VERSION-centos7:latest <APP-NAME>"
 
 RUN yum install -y centos-release-scl-rh && \
-    YUM INSTALL -y epel-release && \
+    yum install -y epel-release && \
     yum install -y ImageMagick poppler-utils ghostscript GraphicsMagick && \
     ( [ "rh-${NAME}${NODEJS_VERSION}" != "${NODEJS_SCL}" ] && yum remove -y ${NODEJS_SCL}\* || : ) && \
     INSTALL_PKGS="rh-nodejs8 rh-nodejs8-npm rh-nodejs8-nodejs-nodemon nss_wrapper" && \
